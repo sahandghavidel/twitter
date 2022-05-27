@@ -36,7 +36,7 @@ export default function Feed() {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <Post key={post.id} post={post} />
+            <Post key={post.id} id={post.id} post={post} />
           </motion.div>
         ))}
       </AnimatePresence>
