@@ -14,7 +14,7 @@ import {
   query,
 } from "firebase/firestore";
 import { db } from "../../firebase";
-import Comment from "../../components/comment";
+import Comment from "../../components/Comment";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function PostPage({ newsResults, randomUsersResults }) {
