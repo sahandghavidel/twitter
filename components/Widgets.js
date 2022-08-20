@@ -44,7 +44,7 @@ export default function Widgets({ newsResults, randomUsersResults }) {
       <div className="sticky top-16 text-gray-700 space-y-3 bg-gray-100 pt-2 rounded-xl w-[90%] xl:w-[75%]">
         <h4 className="font-bold text-xl px-4">Who to follow</h4>
         <AnimatePresence>
-          {randomUsersResults.slice(0, randomUserNum).map((randomUser) => (
+          {randomUsersResults?.slice(0, randomUserNum).map((randomUser) => (
             <motion.div
               key={randomUser.login.username}
               initial={{ opacity: 0 }}
