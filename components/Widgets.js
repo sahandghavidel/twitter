@@ -1,11 +1,12 @@
 import { SearchIcon } from "@heroicons/react/outline";
 import News from "./News";
-import { useState } from "react";
+import { useState } from "react"
+import { Image } from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Widgets({ newsResults, randomUsersResults }) {
-  const [articleNum, setArticleNum] = useState(3);
-  const [randomUserNum, setRandomUserNum] = useState(3);
+  const [articleNum, setArticleNum] = useState("3");
+  const [randomUserNum, setRandomUserNum] = useState("3");
   return (
     <div className="xl:w-[600px] hidden lg:inline ml-8 space-y-5">
       <div className="w-[90%] xl:w-[75%] sticky top-0 bg-white py-1.5 z-50">
@@ -56,7 +57,7 @@ export default function Widgets({ newsResults, randomUsersResults }) {
                 key={randomUser.login.username}
                 className="flex items-center px-4 py-2  cursor-pointer hover:bg-gray-200 transition duration-500 ease-out"
               >
-                <img
+                <Image
                   className="rounded-full"
                   width="40"
                   src={randomUser.picture.thumbnail}

@@ -1,5 +1,5 @@
 {
-  "name": "twitter-v4",
+  "name": "twitter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,24 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.6",
-    "firebase": "^9.8.1",
-    "framer-motion": "^6.3.3",
-    "moment": "^2.29.3",
-    "next": "12.1.6",
-    "next-auth": "^4.3.4",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-modal": "^3.15.1",
-    "react-moment": "^1.1.2",
-    "recoil": "^0.7.3-alpha.2"
+    "@heroicons/react": "latest",
+    "@types/react": "latest",
+    "firebase": "latest",
+    "framer-motion": "latest",
+    "moment": "latest",
+    "next": "latest",
+    "next-auth": "latest",
+    "react": "test",
+    "react-dom": "latest",
+    "react-modal": "latest",
+    "react-moment": "latest",
+    "recoil": "latest"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.1",
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.14.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.13",
-    "tailwindcss": "^3.0.24"
+    "@tailwindcss/forms": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
   }
 }

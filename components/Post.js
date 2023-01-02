@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/outline";
 import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid";
 import Moment from "react-moment";
+import Image from "next/image";
 import {
   collection,
   deleteDoc,
@@ -79,7 +80,7 @@ export default function Post({ post, id }) {
   return (
     <div className="flex p-3 cursor-pointer border-b border-gray-200">
       {/* user image */}
-      <img
+      <Image
         className="h-11 w-11 rounded-full mr-4"
         src={post?.data()?.userImg}
         alt="user-img"
@@ -117,7 +118,7 @@ export default function Post({ post, id }) {
 
         {/* post image */}
 
-        <img
+        <Image
           onClick={() => router.push(`/posts/${id}`)}
           className="rounded-2xl mr-2"
           src={post?.data()?.image}
